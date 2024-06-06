@@ -1,0 +1,82 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    display: block;
+    width: calc(100% - 20px); /* Уменьшаем ширину поля на 20px для учета внутренних отступов */
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #FFD700; /* Желтый цвет при фокусе */
+    outline: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background: #FFD700; /* Желтый цвет кнопки */
+    color: #333;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #FFC700; /* Темнее желтый цвет при наведении */
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: #333;
+}

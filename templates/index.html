@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Предсказание соотношения матрица-наполнитель</title>
+</head>
+<body>
+    <h1>Предсказание соотношения матрица-наполнитель</h1>
+    <form method="POST">
+        {% for column in columns %}
+            <label for="{{ column }}">{{ column }}:</label>
+            <input type="text" name="{{ column }}" id="{{ column }}" required><br>
+        {% endfor %}
+        <input type="submit" value="Предсказание">
+    </form>
+    
+    {% if matrix is not none  %}
+        <h2>Предсказанное значение</h2>
+        <p>Матрица: {{ matrix[0] }}</p>
+    {% endif %}
+</body>
+</html>
+
